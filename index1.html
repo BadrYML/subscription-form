@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script1.js"></script>
+    <title>Document</title>
+</head>
+<body >
+    <div class="regist">
+
+    <div class="personal-info">
+
+        <div class="input-field">
+            <span id="lastnameoutput"></span><br>   
+            <input type="text" id="lastname" placeholder="Last Name" onkeyup="CheckForLast()">
+        </div>
+
+        <div class="input-field">
+            <span id="firstnameoutput"></span><br>
+            <input type="text" id="firstname" max="30" placeholder="First Name" onkeyup="CheckForFirst()">
+        </div>
+    </div>
+        
+        <div class="input-field">
+            <span id="mailoutput"></span><br>
+            <input type="text" id="Email" placeholder="Email" onkeyup="CheckForMail()">
+        </div>
+        
+        <div class="input-field">
+            <span id="phoneoutput"></span><br>
+            <input type="text" id="phone" placeholder="Number" onkeyup="CheckForNumber()">
+        </div>
+    </div>
+
+        <div class="genre-info">
+            <span id="genreinfo"></span>
+            <h2>Genre:</h2>
+                <label for="man">Homme</label>
+                <input type="radio" id="man" name="gender" onChange="genderCheck()">
+                <label for="woman">Femme</label>
+                <input type="radio" id="woman" name="gender" onChange="genderCheck()">
+                <br>
+            <span id="genderOutput"></span>
+        </div>
+
+        <div class="groups">
+            <h2>Groupe:</h2>
+            <label for="101">DW101</label>
+            <input type="radio" id="Group1" name="groupe" onChange="groupCheck()">
+            <label for="102">DW102</label>
+            <input type="radio" id="Group2" name="groupe" onChange="groupCheck()">
+            <label for="103">DW103</label>
+            <input type="radio" id="Group3" name="groupe" onChange="groupCheck()">
+            <label for="104">DM101</label>
+            <input type="radio" id="Group4" name="groupe" onChange="groupCheck()">
+            <label for="105">DM102</label>
+            <input type="radio" id="Group5" name="groupe" onChange="groupCheck()">
+        </div>
+
+        <div class="clubs">
+            <h2>Clubs:</h2>
+            <select id="clubchoice" multiple onchange="clubsCheck()">
+                <option value="informatique">Informatique</option>
+                <option value="robotique">Robotique</option>
+                <option value="echecs">Jeu d'échecs</option>
+                <option value="musique">Musique</option>
+                <option value="foot">Foot</option>
+                <option value="theatre">Théatre</option>
+            </select>
+            <br><span id="cluboutput"></span>
+        </div>  
+    </div>
+
+    <div>
+        <button class="btn1" onClick="redirect()">Subscribe</button>
+    </div>
+    
+</body>
+</html>

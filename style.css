@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+
+*{
+	padding: 0;
+	margin: 15px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.main{
+	position: relative;
+}
+
+.input-field, .genre-info, .groups, .clubs{
+	border: solid 1px;
+}
+
+.btn1{
+	padding: 10PX;
+	margin: 10px;
+}
+
+#lastname, #firstname, #mail, #phone{
+	border: none;
+	background-color: white;
+}
